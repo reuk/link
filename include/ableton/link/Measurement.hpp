@@ -56,8 +56,8 @@ struct Measurement
   }
 
   Measurement(const Measurement&) = delete;
-  Measurement& operator=(Measurement&) = delete;
-  Measurement(const Measurement&&) = delete;
+  Measurement& operator=(const Measurement&) = delete;
+  Measurement(Measurement&&) = delete;
   Measurement& operator=(Measurement&&) = delete;
 
   struct Impl : std::enable_shared_from_this<Impl>
